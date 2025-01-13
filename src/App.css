@@ -1,0 +1,144 @@
+@import url('https://enztron-temp-deployed-branch.netlify.app/components.css');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+:root {
+    --dark-grey     : #2F4858;
+    --dark-grey-2   : #282c34;
+    --royal-blue    : #29517C;
+    --sky-blue      : #0e7490;
+    --bluish-white  : #F5F7F9;
+    --pure-white    : white;
+    --red-color     : #ca0e1d;
+    --background-color-dull-yellow: #e0e0d4;
+    --yellow-background-color     : #efe6e1;
+    --dull-grey     : #8f8f8f;
+    --light-grey: #d3d3d3; /* Replace with your desired light grey color */
+    --dark-blue-color: #123456;
+}
+
+html {
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background: linear-gradient(120deg, #a6c0fe, #f68084);
+    color: var(--dark-grey);
+}
+
+html, body {
+    height: auto;
+}
+
+.App {
+    min-height: 100%;
+    text-align: center;
+    background-color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+*::-webkit-scrollbar {
+    height: 1em;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--light-grey);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--sky-blue);
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    background: var(--dark-blue-color);
+}
+
+a:hover::after {
+    width: 0;
+}
+
+/* Additional Styles */
+button {
+    background-color: #ff7f50;
+    color: var(--pure-white);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+.genre-card {
+    background-color: var(--pure-white);
+    color: var(--dark-grey);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.genre-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.genre-card svg {
+    margin-bottom: 10px;
+    color: var(--sky-blue);
+    font-size: 2rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #ff7f50;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: var(--pure-white);
+    margin: 5px 0 20px;
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover img {
+    transform: scale(1.1);
+}
+
+.new-arrival {
+    position: relative;
+    font-size: 0.8rem;
+    background: var(--red-color);
+    color: var(--pure-white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.footer {
+    background: var(--dark-grey-2);
+    color: var(--pure-white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
